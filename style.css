@@ -302,3 +302,35 @@ li a span{
         transform: perspective(800px) rotateY(-180deg);
     }
 }
+@media screen and (max-width: 375px){
+    .topbar{
+        width: 100%;
+        padding: 35px;
+        -webkit-box-reflect: below -65px linear-gradient(transparent, #0004);
+        font-weight: bold;
+    }
+    .topbar .logo{
+        top: 20px;
+        font-size: 20px;
+        left: 30px;
+    }
+    .Introduction, .Information{
+        left: 90px;
+        backface-visibility: hidden;
+        transform: translate(-50%, -50%);
+        transition: transform .4s linear;
+        animation: none;
+    }
+    .Information{
+        transform: perspective(800px) rotateY(-180deg);
+    }
+    .Introduction{
+        transform: perspective(800px) rotateY(0deg);
+    }
+    .infocontainer:hover > .Information{
+        transform: perspective(800px) rotateY(0deg);
+    }
+    .infocontainer:hover > .Introduction{
+        transform: perspective(800px) rotateY(-180deg);
+    }
+}
