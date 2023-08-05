@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topbar">
+        <label class="logo">Tweiqht's Personal Website</label>
+    </div>
+    <div class="infocontainer">
+        <div class="Introduction">
+            <p class="IntroductionHello">Hello!</p>
+            <p class="IntroductionBox">I am <strong>Tweiqht</strong>, an aspiring developer.</p>
+        </div>
+        <div class="Information">
+            <p class="FurtherInfo">For Further Information click my portfolio.</p>
+            <div class="folder">
+                <a href="#" class="fa fa-folder" style="text-decoration: none; color: rgb(252, 179, 69);"></a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <a href="#" class="togglebox">
+            <span class="icon"></span>
+        </a>
+        <ul class="navitems">
+            <li>
+                <a href="#">
+                    <i class="fa fa-home" style="font-size: 25px;" style="--i:1"></i>
+                    <span style="--g:1">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-folder" style="font-size: 25px;" style="--i:3"></i>
+                    <span style="--g:3">Portfolio</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        var toggleClick = document.querySelector(".togglebox");
+        var container = document.querySelector(".container");
+        toggleClick.addEventListener('click', ()=>{
+            toggleClick.classList.toggle('active');
+            container.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
